@@ -1,9 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bms-app
-  labels:
-    app: bms
+  name: adi-bms-app
+  namespace: adi
 spec:
   replicas: 2
   selector:
@@ -15,7 +14,7 @@ spec:
         app: bms
     spec:
       containers:
-      - name: bms-container
-        image: kastrov/bms:latest  # Replace with your Docker image
+      - name: adi-bms-container
+        image: adi0901/bms:latest  # Replace with your Docker image
         ports:
         - containerPort: 3000  # Replace with the port your app runs on
