@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: adi-bms-container
-        image: adi0901/bms:latest  # Replace with your Docker image
+        image: adi0901/bms:latest  
         ports:
-        - containerPort: 3000  # Replace with the port your app runs on
+        - containerPort: 3000  
